@@ -1,7 +1,7 @@
 # Univeral Health Identifier (UHI)
 DRAFT - Universal Health Identifier 
 
-This purpose of the Univeral Health Identifier (UHI) is to defone a univeral health identifier format for the citizens of the United States.  It is based off a US phone number plus 4 digits. Here are some consideration for a UHI:
+This purpose of the Univeral Health Identifier (UHI) is to defoioe a univeral health identifier format for the citizens of the United States.  It is based off a US phone number plus 4 digits. Here are some consideration for a UHI:
 
 * A UHI should be easy to remember
 * A UHI should play nicely with automated phone based systems (telephony) as well as Internet systems.
