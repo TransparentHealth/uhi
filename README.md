@@ -12,7 +12,7 @@ Thge UHI Specification
 
 A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
 
-A UHI SHALL be consist of a 14 string of digits:
+A UHI SHALL be a 14 chacter ASCII string of only digits:
 
     nnnnnnnnnnnnnn
 
