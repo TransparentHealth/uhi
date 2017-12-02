@@ -10,7 +10,9 @@ This purpose of the Univeral Health Identifier (UHI) is to defoioe a univeral he
 Thge UHI Specification
 ----------------------
 
-A Universal Health Identifier(UHI) SHALL be consist of a 14 string of digits:
+A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
+
+A UHI SHALL be consist of a 14 string of digits:
 
     nnnnnnnnnnnnnn
 
@@ -30,4 +32,4 @@ For example:
 In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
 
 
-This is a draft and should be considrewd like a whiteboard. Comments, ideas and criticism are welcome.
+This is a draft and should be considrewd like a whiteboard. Comments, ideas, and criticism are welcome.
