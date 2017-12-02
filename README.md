@@ -32,4 +32,8 @@ For example:
 In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
 
 
+
+Feedback
+--------
+
 This is a draft and should be considered like a whiteboard. Comments, ideas, and criticism are welcome.
