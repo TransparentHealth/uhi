@@ -18,7 +18,7 @@ For example:
   
   30483755554321
 
-It may contain dashesfor human readability, but these SHALL be are are ignored for processing. but are meant only for human  
+It may contain dashesfor human readability, but these SHALL be are are ignored for processing.
     
     nnn-nnn-nnnn-nnnn
     
