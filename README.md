@@ -20,7 +20,7 @@ For example:
 
 It may contain dashesfor human readability, but these SHALL be are are ignored for processing. but are meant only for human  
     
-    nnnnnnnnnnnnnn
+    nnn-nnn-nnnn-nnnn
     
 For example:
 
