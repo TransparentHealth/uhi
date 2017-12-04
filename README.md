@@ -7,8 +7,8 @@ This purpose of the Univeral Health Identifier (UHI) is to defoioe a univeral he
 * A UHI should play nicely with automated phone-based (telephony) systems as well as Internet systems.
 * A UHI should be designed for those that "opt-in" and should favor convienence over privacy and security.
 
-Thge UHI Specification
-----------------------
+The UHI Specification
+---------------------
 
 A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
 
@@ -36,4 +36,4 @@ In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI with
 Feedback
 --------
 
-This is a draft and should be considered like a whiteboard. Comments, ideas, and criticism are welcome.
+This is a draft and should be considered like a whiteboard. Comments, ideas, and criticism are welcome. Please add Github issues.
