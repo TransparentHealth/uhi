@@ -12,21 +12,21 @@ The UHI Specification
 
 A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
 
-A UHI SHALL be a 14 chacter ASCII string of only digits:
+A UHI SHALL be a 15 chacter ASCII string of only digits. The first 14 digits are user defined. The last digit is a checksum of the previous 14 digits generated using the Luhn Algorithm:
 
-    nnnnnnnnnnnnnn
+    nnnnnnnnnnnnnnn
 
 For example:
   
-  30483755554321
+  304837555543213
 
 It may contain dashesfor human readability, but these SHALL be are are ignored for processing.
     
-    nnn-nnn-nnnn-nnnn
+    nnn-nnn-nnnn-nnnn-n
     
 For example:
 
-    304-837-5555-4321
+    304-837-5555-4321-3
     
 
 In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
