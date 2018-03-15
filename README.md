@@ -1,13 +1,13 @@
 # Univeral Health Identifier (UHI)
 DRAFT - Universal Health Identifier 
 
-This purpose of the Univeral Health Identifier (UHI) is to define a univeral health identifier convention for the United States. The proposed convention is a 15 digit number. UHI is intended to be implemented by health payers and providers when assigning a member-selected/patient-selected master patient index. 
+This purpose of the Univeral Health Identifier (UHI) is to define a univeral health identifier convention for the United States. The proposed convention is a 15 digit number. UHI is intended to be implemented by health payers and providers when assigning a patient-selected (or member selected) master patient index (MPI). 
 
 Here are some considerations for a UHI:
 
 * A UHI should be easy to remember.
 * A UHI should play nicely with automated phone-based (telephony) systems as well as Internet systems.
-* A UHI should be designed for those that "opt-in" and should favor convienence over privacy and security.
+* A UHI should be designed for those that "opt-in" and should favor convienence.
 
 
 The UHI convention maps to a phone number and a PIN (i.e. a 10 digit number plus 4 more digits. 
@@ -26,7 +26,7 @@ For example:
   
   304837555543213
 
-It may contain dashesfor human readability, but these SHALL be are are ignored for processing.
+It may contain dashes for human readability, but these SHALL be are are ignored for processing.
     
     nnn-nnn-nnnn-nnnn-n
     
