@@ -51,7 +51,7 @@ Example (With Dashes)
     304-837-5555-4321-3
     
 
-In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
+In Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
 
 
 
