@@ -1,28 +1,37 @@
 # Univeral Health Identifier (UHI)
 DRAFT - Universal Health Identifier 
 
-This purpose of the Univeral Health Identifier (UHI) is to define a univeral health identifier convention for the United States. The proposed convention is a 15 digit number. UHI is intended to be implemented by health payers and providers when assigning a patient-selected (or member selected) master patient index (MPI). 
+This purpose of the Univeral Health Identifier (UHI) is to define a univeral health identifier convention for the United States. The proposed convention is a 15 digit number. UHI is intended to be implemented by governments, health payers (insurance companies) and health care providers when assigning a patient-selected (or member selected) master patient index (MPI). 
 
 Here are some considerations for a UHI:
 
 * A UHI should be easy to remember.
-* A UHI should play nicely with automated phone-based (telephony) systems as well as Internet systems.
-* A UHI should be designed for those that "opt-in" and should favor convienence.
+* A UHI should play nicely with automated phone-based systems (telephony) as well as Internet systems.
 
 
-The UHI convention maps to a phone number and a PIN (i.e. a 10 digit number plus 4 more digits. 
+Definitions
+-----------
+
+* **Individual** -  A single human being for whom a UHI is created and maintained.
+* **Issuer** - The system and legal entitiy responsible for issing a UHI to an Individual.
 
 
 The UHI Specification
 ---------------------
 
-A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
+* A Universal Health Identifier(UHI) MAY be abreviated by UHI. 
+* A UHI SHALL be a 15 chacter ASCII string of only digits. 
+* The first 14 digits (position 1-14) SHALL be system defined by the Issuer
+* The first 14 digits (position 1-14) MAY be defined by the individual identified by the UHI.
+* The first 14 digits (position 1-10) MAY be the Individual's phone number.
+* The last 1 digit (position 15) SHALL be a checksum of the previous 14 digits generated using the Luhn Algorithm.
+* A UHI SHOULD be permanent for an Individual.
+* A UHI MAY be one and the same as a `sub` (Subject) within Open ID Connect. https://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes 
 
-A UHI SHALL be a 15 chacter ASCII string of only digits. The first 14 digits are user defined. The last digit is a checksum of the previous 14 digits generated using the Luhn Algorithm:
 
-    nnnnnnnnnnnnnnn
-
-For example:
+Example
+--------
+   
   
   304837555543213
 
@@ -30,7 +39,9 @@ It may contain dashes for human readability, but these SHALL be are are ignored 
     
     nnn-nnn-nnnn-nnnn-n
     
-For example:
+Example (With Dashes)
+--------------------
+
 
     304-837-5555-4321-3
     
@@ -42,4 +53,4 @@ In OAuth2, Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI with
 Feedback
 --------
 
-This is a draft and should be considered like a whiteboard. Comments, ideas, and criticism are welcome. Please add Github issues.
+This is a DRAFT. Comments, ideas, and criticism are welcome. Please contribute via Github issues or a pull request.
