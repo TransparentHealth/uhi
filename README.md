@@ -24,7 +24,7 @@ Definitions
 The UHI Specification
 ---------------------
 
-* A Universal Health Identifier (UHI) MAY be abreviated as "UHI". 
+* A Universal Health Identifier (UHI) MAY be abbreviated as "UHI". 
 * A UHI SHALL be a 15 chacter ASCII string of only digits. 
 * The first 14 digits (position 1-14) SHALL be system defined by the Issuer
 * The first 14 digits (position 1-14) MAY be defined by the individual identified by the UHI.
