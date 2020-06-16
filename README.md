@@ -1,27 +1,36 @@
 # Universal Health Identifier (UHI) (WORK_IN_PROGRESS- FEEDBACK WELCOME)
 
-This purpose of the Universal Health Identifier (UHI) is to define a Patient Safety Identifier (PSI) convention for the United States.  UHI is based on the idea of many "Issuers", but the identifier is ideally issued only one time per person.
-The specification is an implementation outline for state governments, health payers (insurance companies), health information exchanges(HIE), and health care providers.
+This purpose of this document is to define a Patient Safety Identifier (PSI) convention for the United States.  UHI is based on the idea of many "Issuers", but the identifier is ideally issued only one time per person.
+The specification is an implementation outline for state governments, health payers (insurance companies), health information exchanges(HIE), and health care providers. It is a 15 digit all-numeric number, with the last digit being a checkdigit. An ewxample UHI could be in the form `119800101451391` or `1-19800101-45139-1`.  While not required (not a `SHALL`), including a  birthdate in positions 2-10 is strongly encouraged (a `SHOULD`).
 
-The UHI identifier is intended:
+
+
+Background and Motivation
+-------------------------
+
+
+The UHI identifier is intended to address the lack of a health identifier in the United States.  Partial use of a social security number (SSN) for this unintended purpose has been problematic to say the least. While not a panacea, creating a patient safety identifier for the people of the United States works to imporve interpoerability and personal control over one's own health data.
+
+A Patient Safety Identifer(PSI) is intended:  
 
 * To be assigned 1 time per person
 * To be given to the patient/subject/member (e.g. printed on card)
 
 Here are some considerations for a UHI:
 
-* A UHI should be easy to remember.
+* A UHI should be easy to remember, and should include a person's birthday.
 * A UHI should play nicely with automated phone-based systems (telephony).
 
-
-The proposed convention is a 15-digit number.
+The convention is a 15-digit number, with the last number 
+representing a checkdigit. The checkdigit calculation is prefixed with a numeric ID which
+identifies the `issuer`. 
 
 
 Definitions
 -----------
 
-* **`Subject`** -  A single human being for whom a UHI is created and maintained. 
-* **`Issuer`** - A legal entity and/or system responsible for issuing a UHI to a Subject.
+* **`subject`** -  A single human being for whom a UHI is created and maintained. 
+* **`issuer`** - A legal entity and/or system responsible for issuing a UHI to a `subject`.
 
 
 Issuer
@@ -47,28 +56,27 @@ The UHI Specification
 
 
 
-Example
+Examples
 --------
    
   
-  119751217206007
+  119800101451391
 
-It may contain dashes for human readability, but these SHALL be are are ignored for processing.
+a UHI MAY contain dashes for human readability, but these SHALL be ignored\removed by processing systems.
     
-    nnn-nnn-nnnn-nnnn-n
+    n-yyyymmdd-nnnnn-n
     
 Example (With Dashes)
 --------------------
 
-    1-19751217-20600-7
+    1-19800101-45139-1
 
-    
-
-In Open ID Connect, and JWT the `sub` (Subject) MAY contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
+   
+In Open ID Connect and JWT the `sub` (Subject) SHALL contain the UHI without dashes. See https://tools.ietf.org/html/rfc7519
 
 
 
 Feedback
 --------
 
-This is a DRAFT. Comments, ideas, and criticism are welcome. Please contribute via Github issues or a pull request.
+Comments, ideas, and criticism are welcome. Please contribute via Github issues or a pull request.
