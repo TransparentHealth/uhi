@@ -1,7 +1,7 @@
 # Universal Health Identifier (UHI) (WORK_IN_PROGRESS- FEEDBACK WELCOME)
 
 This purpose of this document is to define a Patient Safety Identifier (PSI) convention for the United States.  UHI is based on the idea of many "Issuers", but the identifier is ideally issued only one time per person.
-The specification is an implementation outline for state governments, health payers (insurance companies), health information exchanges(HIE), and health care providers. It is a 15 digit all-numeric number, with the last digit being a checkdigit. An ewxample UHI could be in the form `119800101451391` or `1-19800101-45139-1`.  While not required (not a `SHALL`), including a  birthdate in positions 2-10 is strongly encouraged (a `SHOULD`).
+The specification is an implementation outline for state governments, health payers (insurance companies), health information exchanges(HIE), and health care providers. It is a 15 digit all-numeric number, with the last digit being a checkdigit. An ewxample UHI could be in the form `119800101451391` or `1-19800101-45139-1`.  While not required (`SHALL`), including a  birthdate in positions 2-10 is strongly encouraged (`SHOULD`).
 
 
 
@@ -41,10 +41,9 @@ Issuer
 * Issuers SHALL prevent duplicate UHI issuance by checking the UHI hash register. Issuers will be supplied with the salt and hash necessary to check the hashed UHI webservice.
 
 
-The UHI Specification
----------------------
+Universial Health Identifier (UHI)
+----------------------------------
 
-* A Universal Health Identifier (UHI) MAY be abbreviated as "UHI". 
 * A UHI SHALL be a 15-character ASCII string of only digits (0-9). 
 * The first 14 digits (position 1-14) MAY be defined by the Issuer's system.
 * Positions 2-10 SHOULD include the subject's birthday in the format YYYYMMDD.
@@ -53,6 +52,7 @@ The UHI Specification
 * The prefix SHALL be assigned to the Issuer by the UHI webservice governing body.
 * A UHI SHOULD be a life-long patient safety identifier for a Subject.
 * A UHI SHOULD be one and the same as a `sub` (Subject) within Open ID Connect. https://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes
+* A Universal Health Identifier (UHI) MAY be abbreviated as "UHI". 
 
 
 
