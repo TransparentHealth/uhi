@@ -20,8 +20,8 @@ The proposed convention is a 15-digit number.
 Definitions
 -----------
 
-* **Subject** -  A single human being for whom a UHI is created and maintained. 
-* **Issuer** - A legal entity and/or system responsible for issuing a UHI to a Subject.
+* **`Subject`** -  A single human being for whom a UHI is created and maintained. 
+* **`Issuer`** - A legal entity and/or system responsible for issuing a UHI to a Subject.
 
 
 Issuer
